@@ -1,6 +1,7 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00FF99&center=true&vCenter=true&width=900&lines=%F0%9F%91%81%EF%B8%8F%E2%97%A8+Trinetra+—+AI%E2%80%91Powered+Tool+for+Combating+Misinformation" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00FF99&center=true&vCenter=true&width=900&lines=%F0%9F%91%81%EF%B8%8F%E2%97%A8+Trinetra+%E2%80%94+AI%E2%80%91Powered+Tool;for+Combating+Misinformation" />
 </h1>
+
 
 Built for GenAI Exchange Hackathon by Google via Vision | Hack2Skill
 
