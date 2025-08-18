@@ -12,6 +12,29 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
+      {/* Quiz Section */}
+      <section id="quiz-section" className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4 font-space-grotesk">
+              Knowledge Quiz
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto font-space-grotesk font-normal">
+              This is the Quiz Section - Test your knowledge about misinformation detection and fact-checking techniques.
+            </p>
+            <div className="mt-8 p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg max-w-md mx-auto">
+              <p className="text-gray-700 dark:text-gray-200">
+                Interactive quiz content will be implemented here to help users learn about identifying misinformation patterns and developing critical thinking skills.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-3 gap-8 items-center">
           {/* Logo and Description */}
@@ -20,6 +43,7 @@ const Footer: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-center md:text-left"
+            id="about-section"
           >
             <div className="flex items-center justify-center md:justify-start space-x-3 mb-4">
               <div className="bg-blue-600 p-2 rounded-xl">
@@ -61,6 +85,7 @@ const Footer: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-center md:text-right"
+            id="extension-section"
           >
             <div className="mb-4">
               <Button className="mb-3 w-full md:w-auto">
@@ -104,13 +129,13 @@ const Footer: React.FC = () => {
               © 2025 Trinetra. Built with ❤️ for a better informed world.
             </p>
             <div className="flex space-x-6 text-sm text-gray-500 dark:text-gray-400 font-medium">
-              <a href="#privacy" className="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">
+              <a href="#about-section" className="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">
                 Privacy Policy
               </a>
-              <a href="#terms" className="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">
+              <a href="#about-section" className="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">
                 Terms of Service
               </a>
-              <a href="#about" className="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">
+              <a href="#about-section" className="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">
                 About
               </a>
             </div>

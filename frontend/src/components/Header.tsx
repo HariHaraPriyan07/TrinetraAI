@@ -41,9 +41,9 @@ const Header: React.FC<HeaderProps> = ({ onNavigateToHistory, onNewChat }) => {
   };
 
   const navItems = [
-    { label: 'About', href: '#about' },
-    { label: 'Extension', href: '#extension' },
-    { label: 'Quiz', href: '#quiz' },
+    { label: 'About', href: '#about-section' },
+    { label: 'Extension', href: '#extension-section' },
+    { label: 'Quiz', href: '#quiz-section' },
     ...(isAuthenticated ? [{ label: 'History', href: '#history', onClick: onNavigateToHistory }] : [])
   ];
 
@@ -101,7 +101,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigateToHistory, onNewChat }) => {
             {navItems.map((item) => (
               <motion.a
                 key={item.label}
-                href={item.onClick ? undefined : item.href}
+                href={item.href}
                 onClick={item.onClick}
                 className="block text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 text-sm font-medium py-2 transition-colors duration-200 cursor-pointer"
                 whileHover={{ y: -2 }}
@@ -182,7 +182,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigateToHistory, onNewChat }) => {
               {navItems.map((item) => (
                 <motion.a
                   key={item.label}
-                  href={item.onClick ? undefined : item.href}
+                  href={item.href}
                   onClick={() => {
                     if (item.onClick) {
                       item.onClick();
